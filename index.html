@@ -310,6 +310,13 @@
         <p>⚜️ MMXXVI - Kingdom of Norman's Domain - All Rights Reserved by Royal Decree ⚜️</p>
     </footer>
 
+    <button id="backToTop" class="back-to-top" title="Return to Palace Gates">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+        <span>Top</span>
+    </button>
+
     <script>
         // Parallax effect on mouse move
         const parallaxContainer = document.querySelector('.parallax-container');
@@ -418,6 +425,23 @@
                     messageDiv.style.display = 'none';
                 }, 3000);
             }, 2000);
+        });
+
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     </script>
 </body>
