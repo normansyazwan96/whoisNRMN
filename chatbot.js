@@ -36,14 +36,14 @@ async function sendMessage() {
 
     try {
         const response = await fetch("https://api.floweaver.top/chat", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                question: question
-            })
-        });
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        question: question
+    })
+});
 
         const data = await response.json();
 
