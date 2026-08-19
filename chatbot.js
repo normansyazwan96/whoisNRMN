@@ -56,10 +56,12 @@ async function sendMessage() {
         messages.scrollTop = messages.scrollHeight;
 
     } catch (error) {
-        messages.innerHTML += `
-            <div class="bot-message">
-                Sorry, I couldn't connect to the chatbot.
-            </div>
-        `;
+    console.error("CHATBOT ERROR:", error);
+
+    messages.innerHTML += `
+        <div class="bot-message">
+            Sorry, I couldn't connect to the chatbot.
+        </div>
+    `;
     }
 }
