@@ -689,7 +689,8 @@ footer {
 #chatbot {
     position: fixed;
     bottom: 90px;
-    right: 25px;
+    right: auto;
+    left: 25px;
     width: 350px;
     height: 500px;
     background: white;
@@ -766,7 +767,8 @@ footer {
 #chatbot-toggle {
     position: fixed;
     bottom: 25px;
-    right: 25px;
+    right: auto;
+    left: 25px;
     width: 55px;
     height: 55px;
     border-radius: 50%;
