@@ -27,6 +27,11 @@ class ChatRequest(BaseModel):
     question: str
 
 
+@app.get("/")
+def root():
+    return {"status": "Chatbot backend is running"}
+
+
 @app.post("/chat")
 async def chat(request: ChatRequest):
 
@@ -38,13 +43,14 @@ Answer questions about Norman's:
 - technical skills
 - certifications
 - projects
-- AI/automation experience
+- AI and automation experience
 - cloud experience
 
 Be professional, concise and friendly.
 
-If you don't know the answer, say that the information
-is not available rather than making something up.
+Only answer based on information available about Norman.
+If you don't know something, say that the information is not available.
+Do not invent qualifications, experience or projects.
 
 User question:
 {request.question}
