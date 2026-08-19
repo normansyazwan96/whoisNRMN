@@ -6,8 +6,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from google import genai
+from pathlib import Path
 
-load_dotenv("backend/.env")
+BASE_DIR = Path(__file__).resolve().parent
+
+load_dotenv(BASE_DIR / ".env")
 
 app = FastAPI()
 
@@ -35,7 +38,9 @@ class ChatRequest(BaseModel):
 
 @app.get("/")
 def root():
-    return {"status": "RAG chatbot backend is running"}
+    return {
+        "status": "RAG chatbot backend is running"
+    }
 
 
 @app.post("/chat")
@@ -49,6 +54,7 @@ async def chat(request: ChatRequest):
 
     documents = results.get("documents", [[]])[0]
 
+    # Combine retrieved resume chunks
     context = "\n\n".join(documents)
 
     prompt = f"""
@@ -63,7 +69,8 @@ RESUME CONTEXT:
 STRICT RULES:
 - Only use information contained in the resume context.
 - Do not use outside knowledge.
-- Do not invent qualifications, experience, projects, skills or certifications.
+- Do not invent qualifications, experience, projects, skills,
+  certifications, employers or achievements.
 - If the answer cannot be found in the resume context, say:
   "I don't have that information in Norman's resume."
 - Be professional, concise and friendly.
