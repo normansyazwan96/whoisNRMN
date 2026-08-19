@@ -1,5 +1,6 @@
 import os
 
+import chromadb
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -18,9 +19,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Gemini
 client = genai.Client(
     api_key=os.getenv("GEMINI_API_KEY")
 )
+
+# ChromaDB
+chroma_client = chromadb.PersistentClient(path="./chroma_db")
+collection = chroma_client.get_collection(name="resume")
 
 
 class ChatRequest(BaseModel):
@@ -29,30 +35,40 @@ class ChatRequest(BaseModel):
 
 @app.get("/")
 def root():
-    return {"status": "Chatbot backend is running"}
+    return {"status": "RAG chatbot backend is running"}
 
 
 @app.post("/chat")
 async def chat(request: ChatRequest):
 
+    # Search the resume for relevant information
+    results = collection.query(
+        query_texts=[request.question],
+        n_results=5
+    )
+
+    documents = results.get("documents", [[]])[0]
+
+    context = "\n\n".join(documents)
+
     prompt = f"""
 You are an AI assistant for Norman's professional portfolio.
 
-Answer questions about Norman's:
-- IT experience
-- technical skills
-- certifications
-- projects
-- AI and automation experience
-- cloud experience
+You must answer the user's question ONLY using the information
+provided in the resume context below.
 
-Be professional, concise and friendly.
+RESUME CONTEXT:
+{context}
 
-Only answer based on information available about Norman.
-If you don't know something, say that the information is not available.
-Do not invent qualifications, experience or projects.
+STRICT RULES:
+- Only use information contained in the resume context.
+- Do not use outside knowledge.
+- Do not invent qualifications, experience, projects, skills or certifications.
+- If the answer cannot be found in the resume context, say:
+  "I don't have that information in Norman's resume."
+- Be professional, concise and friendly.
 
-User question:
+USER QUESTION:
 {request.question}
 """
 
