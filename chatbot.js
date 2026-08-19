@@ -35,7 +35,7 @@ async function sendMessage() {
     input.value = "";
 
     try {
-        const response = await fetch("https://YOUR-BACKEND-URL.com/chat", {
+        const response = await fetch("https://api.floweaver.top/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

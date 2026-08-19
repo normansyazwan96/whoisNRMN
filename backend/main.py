@@ -6,13 +6,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from google import genai
 
-load_dotenv()
+load_dotenv("backend/.env")
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://floweaver.top",
+"https://www.floweaver.top"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
