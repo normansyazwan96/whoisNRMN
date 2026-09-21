@@ -1,476 +1,311 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Norman Syazwan | IT Infrastructure Specialist & Cloud Solutions Architect</title>
-
-    <link rel="stylesheet" href="style.css?v=2" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Norman Syazwan builds practical LLM, RAG, and automation systems with Python, FastAPI, vector search, and workflow automation.">
+  <meta name="theme-color" content="#06111d">
+  <title>Norman Syazwan | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="#" class="logo">Norman Syazwan</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Norman Syazwan home">NRMN<span>.</span></a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+      </div>
+
+      <button class="nav-ai-button" type="button" data-open-chat>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.2 9.2 0 0 1-4-.9L3 21l1.7-4.4A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+        Ask normAI
+      </button>
     </nav>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div>
-                    <span class="hero-title">Global IT Specialist</span>
-                    <h1>Driving Efficiency & Enhance IT Operations</h1>
-                    
-                    <div class="role-card">
-                        <h2>⚖️ Department of IT Operations</h2>
-                        <p>Presiding over Enterprise IT Services with unwavering commitment to stability, continuous improvement, and operational excellence across all territories.</p>
-                    </div>
-                    
-                    <div class="role-card">
-                        <h2>📜 Ministry of Automation</h2>
-                        <p>Royal Engineer crafting decree-worthy workflows with PowerShell, Python, and n8n to modernize kingdom operations.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="parallax-container">
-                <div class="parallax-image" id="parallaxImg">
-                    <img src="70.png" alt="Technology Background">
-                </div>
-            </div>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">AI Engineer <span>·</span> Kuala Lumpur</p>
+        <h1 id="hero-title">Building useful <span>AI</span> systems.</h1>
+        <p class="hero-intro">I design practical LLM, RAG, and automation solutions grounded in seven years of enterprise technology experience.</p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore Projects <span aria-hidden="true">→</span></a>
+          <button class="button button-ghost" type="button" data-open-chat>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.2 9.2 0 0 1-4-.9L3 21l1.7-4.4A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+            Ask normAI
+          </button>
         </div>
+
+        <ul class="hero-tags" aria-label="Core technologies">
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>RAG</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="portrait-wrap glass">
+          <div class="portrait-glow" aria-hidden="true"></div>
+          <img class="hero-portrait" src="70.png" alt="Norman Syazwan">
+        </div>
+
+        <div class="rag-card glass" aria-label="Retrieval augmented generation architecture">
+          <div class="card-topline">
+            <p>RAG System</p>
+            <span class="live-status"><i></i> Live</span>
+          </div>
+
+          <div class="rag-flow">
+            <div class="rag-node">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span>Query</span>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="rag-node">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+              <span>Retrieve</span>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="rag-node">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3M10 10h4v4h-4z"/></svg>
+              <span>LLM</span>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="rag-node">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H8l-5 2 1.7-4.5A8 8 0 1 1 21 12Z"/></svg>
+              <span>Answer</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a Senior IT Executive with expertise in cloud infrastructure, IT operations, and automation. Currently based in Kuala Lumpur, I specialize in designing and implementing scalable solutions across Azure, Microsoft 365, and enterprise security platforms.</p>
-                    <p>With Microsoft certifications in Azure Solutions Architecture, Security, and Administration, I bring a comprehensive approach to IT infrastructure management. I'm passionate about leveraging automation to improve efficiency and building robust systems that scale.</p>
-                    <p>My background in Computer Science combined with hands-on experience managing global IT operations gives me a unique perspective on solving complex technical challenges.</p>
-                </div>
-                
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Cloud & Microsoft</h3>
-                        <ul>
-                            <li>Azure Infrastructure</li>
-                            <li>Office 365 / Microsoft 365</li>
-                            <li>Entra ID & Defender</li>
-                            <li>Exchange & SharePoint</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Automation & Scripting</h3>
-                        <ul>
-                            <li>PowerShell</li>
-                            <li>Python</li>
-                            <li>n8n Workflow Automation</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Device Management</h3>
-                        <ul>
-                            <li>Microsoft Intune</li>
-                            <li>JAMF Pro</li>
-                            <li>Kandji</li>
-                            <li>Cisco Meraki</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>ITSM & Security</h3>
-                        <ul>
-                            <li>ITIL v4 Framework</li>
-                            <li>FreshService / Zendesk</li>
-                            <li>OKTA / Mimecast</li>
-                            <li>Sophos / KnowBE4</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="section shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Portfolio</p>
+        <h2 id="work-title">Selected work</h2>
+        <p>Applied AI projects built around real information and operational problems.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card glass reveal">
+          <div class="project-meta">
+            <span class="project-type">RAG</span>
+            <span>01</span>
+          </div>
+          <div>
+            <h3>RAG Portfolio Assistant</h3>
+            <p>An AI assistant that answers questions about my work using resume content, vector retrieval, and grounded LLM responses.</p>
+          </div>
+
+          <div class="mini-flow" aria-label="Project architecture">
+            <span>Documents</span><i>→</i><span>ChromaDB</span><i>→</i><span>Gemini</span>
+          </div>
+
+          <ul class="tech-list" aria-label="Technologies">
+            <li>Python</li><li>FastAPI</li><li>Gemini</li><li>ChromaDB</li>
+          </ul>
+
+          <div class="project-actions">
+            <button class="text-link" type="button" data-open-chat>Try the assistant <span aria-hidden="true">↗</span></button>
+            <a class="text-link muted" href="https://github.com/normansyazwan96/whoisNRMN" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-meta">
+            <span class="project-type green">Automation</span>
+            <span>02</span>
+          </div>
+          <div>
+            <h3>AI Automation Workflows</h3>
+            <p>API-driven workflows that connect business systems, reduce repetitive IT tasks, and turn operational data into useful actions.</p>
+          </div>
+
+          <div class="automation-visual" aria-hidden="true">
+            <div class="automation-orbit orbit-one"></div>
+            <div class="automation-orbit orbit-two"></div>
+            <div class="automation-core">n8n</div>
+          </div>
+
+          <ul class="tech-list" aria-label="Technologies">
+            <li>n8n</li><li>Python</li><li>PowerShell</li><li>Webhooks</li>
+          </ul>
+
+          <div class="project-actions">
+            <a class="text-link" href="#contact">Discuss the project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Senior IT Executive</h3>
-                    <div class="company">TEAM LEWIS</div>
-                    <div class="date">July 2025 - Present</div>
-                    <ul>
-                        <li>Leading IT operations and infrastructure projects across global offices</li>
-                        <li>Architecting cloud solutions and security implementations</li>
-                        <li>Managing cross-functional teams and vendor relationships</li>
-                    </ul>
-                </div>
+    <section class="section shell split-section" id="about" aria-labelledby="about-title">
+      <div class="section-heading sticky-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Enterprise experience.<br>AI focus.</h2>
+      </div>
 
-                <div class="timeline-item">
-                    <h3>IT Operations Assistant</h3>
-                    <div class="company">TEAM LEWIS</div>
-                    <div class="date">January 2022 - July 2025</div>
-                    <ul>
-                        <li>Managed IT operations covering end-user support, infrastructure reliability, and global compliance</li>
-                        <li>Administered Active Directory, Office 365, and OKTA for secure user provisioning</li>
-                        <li>Deployed MDM solutions (JAMF, Intune, Kandji) ensuring Day-1 readiness for new employees</li>
-                        <li>Developed automation workflows with PowerShell, Python, and n8n reducing manual workload</li>
-                        <li>Maintained device compliance across APAC & EU regions with security patches and updates</li>
-                    </ul>
-                </div>
+      <div class="about-copy reveal">
+        <p class="lead">I’m an AI-focused IT professional who understands both the technology and the operational environments where it needs to work.</p>
+        <p>Across seven years in enterprise technology, I’ve worked with support operations, service management, knowledge bases, identity, cloud platforms, security, and automation. That experience now shapes how I build useful AI applications: grounded in real workflows, clear user needs, and reliable integrations.</p>
+        <p>My current focus is LLM applications, retrieval-augmented generation, APIs, and agentic workflow automation.</p>
 
-                <div class="timeline-item">
-                    <h3>IT Support Specialist</h3>
-                    <div class="company">ASM Learning Sdn. Bhd.</div>
-                    <div class="date">September 2019 - December 2021</div>
-                    <ul>
-                        <li>Managed IT assets and maintained LMS platforms (TalentLMS, Courseplay, iSpring)</li>
-                        <li>Provided technical training for employees and clients</li>
-                        <li>Delivered weekly IT reports and support insights to management</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="principles glass">
+          <div><span>01</span><p>Start with a real problem.</p></div>
+          <div><span>02</span><p>Ground outputs in trusted context.</p></div>
+          <div><span>03</span><p>Design for maintainability.</p></div>
         </div>
+      </div>
     </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-content">
-                <div class="projects-text">
-                    <p>📜 Presenting the Royal Archives of automation decrees and infrastructure projects commissioned for the prosperity of our digital realm.</p>
-                </div><br>
-                <div class="projects-container">
-                    
+    <section class="section shell" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2 id="experience-title">From IT operations to AI systems</h2>
+      </div>
 
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="New Joiners.png" alt="New Joiner Workflow Report">
-                            <div class="text">New Employee Report Automation</div>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="Leavers.png" alt="Leavers Workflow Report">
-                            <div class="text">Leavers Report Automation</div>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="Article.png" alt="Articles Workflow Report">
-                            <div class="text">Knowledge Base Report Automation</div>
-                          </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                      </div>
-                </div>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Apr 2026 — Present</div>
+          <div class="timeline-content">
+            <p class="timeline-company">Extreme Reach</p>
+            <h3>IT Support Engineer</h3>
+            <p>Supporting enterprise users and systems across Microsoft 365, Intune, Entra ID, identity, endpoint security, collaboration technology, and infrastructure.</p>
+          </div>
+        </article>
 
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 10000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            });
-        </script>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Jan 2022 — Apr 2026</div>
+          <div class="timeline-content">
+            <p class="timeline-company">TEAM LEWIS</p>
+            <h3>Senior IT Executive</h3>
+            <p>Managed global IT operations and developed automation workflows with PowerShell, Python, and n8n to reduce manual workload and improve service efficiency.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Sep 2019 — Dec 2021</div>
+          <div class="timeline-content">
+            <p class="timeline-company">ASM Learning</p>
+            <h3>IT Support Specialist</h3>
+            <p>Managed technology operations, LMS platforms, company websites, assets, and technical training for employees.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <h3>Azure Solutions Architect Expert</h3>
-                    <p>Microsoft Certified (AZ-305)</p>
-                    <span class="badge">Earned - 2024</span>
-                    <span class="badge active">Active</span>
-                </div>
-                
-                <div class="cert-card">
-                    <h3>ITIL v4 Foundation</h3>
-                    <p>IT Service Management</p>
-                    <span class="badge">Earned - 2023</span>
-                    <span class="badge active">Active</span>
-                </div>
-                
-                <div class="cert-card">
-                    <h3>AI Agentic Automation with n8n</h3>
-                    <p>Workflow Automation</p>
-                    <span class="badge">Earned - 2025</span>
-                    <span class="badge active">Active</span>
-                </div>
+    <section class="section shell" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="skills-title">What I work with</h2>
+      </div>
 
-                <div class="cert-card">
-                    <h3>Azure Security Engineer Associate</h3>
-                    <p>Microsoft Certified</p>
-                    <span class="badge">Earned - 2024</span>
-                    <span class="badge expired">Expired</span>
-                </div>
-                
-                <div class="cert-card">
-                    <h3>Azure Administrator Associate</h3>
-                    <p>Microsoft Certified</p>
-                    <span class="badge">Earned - 2024</span>
-                    <span class="badge expired">Expired</span>
-                </div>
-            </div>
-        </div>
+      <div class="capability-grid">
+        <article class="capability-card glass reveal">
+          <span>01</span>
+          <h3>LLM Engineering</h3>
+          <p>RAG · Prompt Engineering · Gemini · OpenAI · Claude · ChromaDB</p>
+        </article>
+        <article class="capability-card glass reveal">
+          <span>02</span>
+          <h3>AI Applications</h3>
+          <p>Python · FastAPI · REST APIs · JSON · Webhooks · JavaScript</p>
+        </article>
+        <article class="capability-card glass reveal">
+          <span>03</span>
+          <h3>Automation</h3>
+          <p>n8n · Power Automate · PowerShell · Workflow Optimisation</p>
+        </article>
+        <article class="capability-card glass reveal">
+          <span>04</span>
+          <h3>Enterprise Technology</h3>
+          <p>Azure · Microsoft 365 · Entra ID · Intune · AWS · ITSM</p>
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-container">
-                <!-- Left Side: Contact Info -->
-                <div class="contact-info">
-                    <!-- Contact Section -->
-                    <h2>🏰 Request Royal Audience</h2>
-                    <p>Submit your petition to collaborate or seek counsel from the Royal IT Office.</p>
-                    
-                    <div class="contact-links">
-                        <a href="mailto:normansyazwan96@gmail.com" class="contact-btn">Email Me</a>
-                    </div>
-                    
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/normansyazwan" target="_blank" class="social-btn" aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.facebook.com/normansyazwan96" target="_blank" class="social-btn" aria-label="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.threads.net/@normansyazwan96" target="_blank" class="social-btn" aria-label="Threads">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.781 3.631 2.695 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 013.02.142l-.126 1.974c-.984-.127-1.984-.185-2.97-.173-1.004.055-1.86.308-2.48.733-.62.426-.94 1.006-.902 1.64.04.66.45 1.19 1.156 1.49.624.267 1.396.37 2.23.308 1.07-.08 1.896-.468 2.453-1.154.547-.673.817-1.543.817-2.588v-6.65c0-1.88-.375-3.246-1.117-4.06-.743-.815-1.893-1.24-3.416-1.254-1.526.014-2.677.441-3.426 1.257-.75.816-1.14 2.182-1.14 4.058v6.65c.002 3.04 1.163 5.314 3.428 6.684 1.965 1.188 4.57 1.68 7.63 1.445l.192 1.98c-3.26.245-6.132-.225-8.39-1.63-2.63-1.64-4.043-4.3-4.043-7.68v-6.65c0-2.45.53-4.27 1.57-5.42 1.04-1.147 2.652-1.737 4.779-1.752h.007c2.13.015 3.742.605 4.783 1.752 1.04 1.15 1.573 2.97 1.573 5.42v6.65c0 1.328-.37 2.49-1.098 3.45-.727.96-1.777 1.54-3.12 1.721a5.966 5.966 0 01-1.024.06c-1.382 0-2.635-.41-3.622-1.184-1.083-.852-1.672-2.033-1.744-3.515-.073-1.508.445-2.893 1.5-4.008 1.056-1.116 2.557-1.785 4.34-1.935a15.883 15.883 0 013.45.162l-.185 1.974c-1.006-.127-2.005-.185-2.97-.173z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right Side: Contact Form -->
-                <div class="contact-form">
-                    <h3>Get My Resume</h3>
-                    <form id="resumeForm">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Your full name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="+60 12-345 6789">
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Resume to My Email</button>
-                        
-                        <div id="formMessage" class="form-message"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <section class="section shell credentials" aria-labelledby="credentials-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Credentials</p>
+        <h2 id="credentials-title">Certifications</h2>
+      </div>
+      <div class="credential-list reveal">
+        <div><span>Microsoft</span><strong>Azure Solutions Architect Expert</strong><small>Active · 2024</small></div>
+        <div><span>n8n</span><strong>AI Agentic Automation</strong><small>2025</small></div>
+        <div><span>PeopleCert</span><strong>ITIL v4 Foundation</strong><small>2023</small></div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>⚜️ MMXXVI - Kingdom of Norman's Domain - All Rights Reserved by Royal Decree ⚜️</p>
-    </footer>
+    <section class="section shell contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card glass reveal">
+        <p class="eyebrow">Let’s connect</p>
+        <h2 id="contact-title">Interested in building something useful with AI?</h2>
+        <p>I’m open to AI engineering opportunities, practical collaborations, and conversations about automation.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:normansyazwan96@gmail.com">Email Norman <span aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/normansyazwan" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <button id="backToTop" class="back-to-top" title="Return to Palace Gates">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 15l-6-6-6 6"/>
-        </svg>
-        <span>To The Gates</span>
-    </button>
+  <footer class="footer shell">
+    <a class="brand" href="#top">NRMN<span>.</span></a>
+    <p>AI systems with an enterprise foundation.</p>
+    <p>© <span id="current-year"></span> Norman Syazwan</p>
+  </footer>
 
-    <script>
-        // Parallax effect on mouse move
-        const parallaxContainer = document.querySelector('.parallax-container');
-        const parallaxImg = document.getElementById('parallaxImg');
-        const img = parallaxImg.querySelector('img');
+  <button class="chat-fab" type="button" data-open-chat aria-label="Open Norman's AI assistant">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.2 9.2 0 0 1-4-.9L3 21l1.7-4.4A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+    <span>Ask normAI</span>
+    <i aria-hidden="true"></i>
+  </button>
 
-        parallaxContainer.addEventListener('mousemove', (e) => {
-            const rect = parallaxContainer.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            
-            const percentX = (x - centerX) / centerX;
-            const percentY = (y - centerY) / centerY;
-            
-            const rotateY = percentX * 15;
-            const rotateX = -percentY * 15;
-            
-            parallaxImg.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-            img.style.transform = `scale(1.15) translateX(${percentX * -20}px) translateY(${percentY * -20}px)`;
-        });
-
-        parallaxContainer.addEventListener('mouseleave', () => {
-            parallaxImg.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
-            img.style.transform = 'scale(1.1)';
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add scroll animation to timeline items
-        const observerOptions = {
-            threshold: 0.2,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateX(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.timeline-item, .cert-card').forEach(item => {
-            item.style.opacity = '0';
-            item.style.transform = 'translateX(-30px)';
-            item.style.transition = 'opacity 0.6s, transform 0.6s';
-            observer.observe(item);
-        });
-
-         // Handle resume form submission
-         document.getElementById('resumeForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const messageDiv = document.getElementById('formMessage');
-            const submitBtn = this.querySelector('.submit-btn');
-            
-            // Disable button and show loading
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
-            
-            // Create mailto link with form data
-            const subject = encodeURIComponent('Resume Request from ' + name);
-            const body = encodeURIComponent(
-                'Name: ' + name + '\n' +
-                'Email: ' + email + '\n' +
-                'Phone: ' + phone + '\n\n' +
-                'Please send your resume to this email address.\n\n' +
-                'Thank you!'
-            );
-            
-            // Open email client
-            window.location.href = `mailto:normansyazwan96@gmail.com?subject=${subject}&body=${body}`;
-            
-            // Show success message
-            messageDiv.textContent = 'Opening your email client... Please send the email to receive my resume!';
-            messageDiv.className = 'form-message success';
-            messageDiv.style.display = 'block';
-            
-            // Reset form after 2 seconds
-            setTimeout(() => {
-                this.reset();
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send Resume to My Email';
-                
-                // Hide message after 5 seconds
-                setTimeout(() => {
-                    messageDiv.style.display = 'none';
-                }, 3000);
-            }, 2000);
-        });
-
-        const backToTopButton = document.getElementById('backToTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
-        });
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-
-    <!-- Chatbot -->
-<div id="chatbot">
-    <div id="chatbot-header">
-        Ask Me Anything
-        <button id="chatbot-close">×</button>
+  <aside class="chatbot glass" id="chatbot" aria-label="normAI assistant" aria-hidden="true">
+    <div class="chatbot-header">
+      <div>
+        <span class="chat-avatar">N</span>
+        <div><strong>normAI</strong><small><i></i> Portfolio assistant</small></div>
+      </div>
+      <button id="chatbot-close" type="button" aria-label="Close chat">×</button>
     </div>
 
-    <div id="chatbot-messages">
-        <div class="bot-message">
-            Hi! Ask me about my experience, skills, projects, or certifications.
-        </div>
+    <div class="chatbot-messages" id="chatbot-messages" aria-live="polite">
+      <div class="bot-message message">Hi! Ask me about Norman’s AI projects, experience, skills, or certifications.</div>
+      <div class="prompt-chips" aria-label="Suggested questions">
+        <button type="button">Explain the RAG project</button>
+        <button type="button">What are Norman’s AI skills?</button>
+      </div>
     </div>
 
-    <div id="chatbot-input-area">
-        <input
-            type="text"
-            id="chatbot-input"
-            placeholder="Ask a question..."
-        />
-        <button id="chatbot-send">Send</button>
-    </div>
-</div>
+    <form class="chatbot-input-area" id="chatbot-form">
+      <label class="sr-only" for="chatbot-input">Ask a question</label>
+      <input id="chatbot-input" type="text" autocomplete="off" maxlength="500" placeholder="Ask about my work...">
+      <button id="chatbot-send" type="submit" aria-label="Send message">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+      </button>
+    </form>
+  </aside>
 
-<button id="chatbot-toggle">💬</button>
-
-<script src="chatbot.js"></script>
-
+  <script src="chatbot.js"></script>
 </body>
 </html>
