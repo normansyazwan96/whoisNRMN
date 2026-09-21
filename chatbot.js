@@ -40,7 +40,7 @@ function addMessage(text, role) {
 function addTypingIndicator() {
   const indicator = document.createElement("div");
   indicator.className = "bot-message message typing";
-  indicator.setAttribute("aria-label", "Norman AI is typing");
+  indicator.setAttribute("aria-label", "normAI is typing");
   indicator.innerHTML = "<i></i><i></i><i></i>";
   messages.appendChild(indicator);
   messages.scrollTop = messages.scrollHeight;
