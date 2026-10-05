@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+backend/.env
+
+# Generated vector database
+chroma_db/
+backend/chroma_db/
+
+# Local tooling
+backend/view_chunks.py
